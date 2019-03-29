@@ -3,7 +3,7 @@ import { data as phData } from "./placeholderData";
 
 export const loadData = (dataType) => ({
     type: ActionTypes.DATA_LOAD,
-    data: {
+    payload: {
         dataType: dataType,
         data: phData[dataType]
     }
