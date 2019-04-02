@@ -1,3 +1,15 @@
+Sports Store application via Adam Freeman's "Pro React" book. Using this to improve overall knowledge and execution of react concepts. Will also modify this outside of the the default readings (ex. Functional components wherever possible, feature based file structure, other enhancements as necessary)
+
+How to use - 
+
+-   Download repo
+-   Go to folder repo
+-   npm install
+-   npm start
+
+Feel free to contribute
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
