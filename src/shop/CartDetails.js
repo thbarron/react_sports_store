@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import moduleName from "./CartDetailsRows";
+import CartDetailsRows from "./CartDetailsRows";
 
 export class CartDetails extends Component {
   getLinkClasses = () => `btn btn-secondary m-1
@@ -20,7 +20,23 @@ export class CartDetails extends Component {
               <th />
             </tr>
           </thead>
+          <tbody>
+            <CartDetailsRows
+              cart={this.props.cart}
+              cartPrice={this.props.cartPrice}
+              updateQuantity={this.props.updateCartQuantity}
+              removeFromCart={this.props.removeFromCart}
+            />
+          </tbody>
         </table>
+        <div className="text-center">
+          <Link className="btn btn-primary m-1" to="/shop">
+            Continue Shopping
+          </Link>
+          <Link className={this.getLinkClasses()} to="/shop/checkout">
+            Checkout
+          </Link>
+        </div>
       </div>
     );
   }
